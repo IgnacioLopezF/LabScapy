@@ -18,13 +18,20 @@
 	
 	  1.-¿Qué pasa cuando envió un paquete a la dirección FF:FF:FF:FF:FF:FF? ¿Quienes
 	     lo reciben? ¿Por qué?\\
-	     
+	     Cuando enviamos un paquete a la dirección FF:FF:FF:FF:FF:FF, este fue enviado a todos los equipos dentro de la red
+	     Ethernet. Esto es debido a que la dirección antes mencionada esta designada para que la difusión de nuestro paquete sea
+	     amplia, a este tipo de difusión se le conoce como “Broadcast”.
 	  2.-¿Qué pasa cuando envió un paquete a una MAC de otro equipo? ¿Quieres lo
 	      pueden reciben? ¿Por qué?\\
-	      
+	      Cuando enviamos un paquete a la dirección MAC de otro equipo dentro de la red Ethernet, solamente el equipo que poseía
+	      esa dirección fue capaz de recibirlo. Esto ocurre puesto a que, como indicamos anteriormente, al paquete le dimos una
+	      MAC de destino fija, entonces el paquete se encargó de viajar solamente al equipo que poseía esa dirección
 	  3.-¿Qué sucede si envía un paquete a una MAC que no corresponda a ningún equipo
 	      de la red? ¿Quienes lo pueden recepcionar? ¿Por qué?\\
-	      
+	      Cuando enviamos un paquete a una dirección MAC que no correspondía a ningún equipo de la red, al enviarlo nos apareció
+	      el mensaje: “WARNING: Mac address to reach destination not found. Using Broadcast.” Y posteriormente el paquete fue
+	      enviado a todos los equipos pertenecientes a la red Ethernet. (No sé el verdadero motivo por el cual la wea se mandó
+	      para todos xd)
 
 \chapter{Conclusión}
   
